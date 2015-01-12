@@ -1,0 +1,5 @@
+/Users/ayog/AndroidStudioProjects/EzTrade/app/build/intermediates/classes/debug
+/Users/ayog/AndroidStudioProjects/EzTrade/app/build/intermediates/pre-dexed/debug/support-annotations-21.0.3-7e8f4032d78bf438eaadc79b9a554ae2c7cc5818.jar
+/Users/ayog/AndroidStudioProjects/EzTrade/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.3-c34cb6fd9fb43b0658089eac9d4af020d9f14cc5.jar
+/Users/ayog/AndroidStudioProjects/EzTrade/app/build/intermediates/pre-dexed/debug/classes-d321327a68768bf7cb7e5728f780feb796fb1ae7.jar
+/Users/ayog/AndroidStudioProjects/EzTrade/app/build/intermediates/pre-dexed/debug/classes-eafe5709665a78c45b8410bcb97448136a78556a.jar
