@@ -1,9 +1,11 @@
-package eztrade.eztrade.com.eztrade;
+package com.eztrade.eztrade.Activities;
 
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+
+import eztrade.eztrade.com.eztrade.R;
 
 
 public class SellActivity extends Activity {
