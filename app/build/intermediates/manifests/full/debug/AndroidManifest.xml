@@ -10,6 +10,11 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
 
     <application
         android:name="com.eztrade.eztrade.EzTradeApplicaiton"
@@ -30,6 +35,14 @@
         <activity
             android:name="com.eztrade.eztrade.Activities.SellActivity"
             android:label="@string/title_activity_sell" >
+        </activity>
+        <activity
+            android:name="com.eztrade.eztrade.Activities.ParseTestActivity"
+            android:label="@string/title_activity_parse_test" >
+        </activity>
+        <activity
+            android:name="com.eztrade.eztrade.Activities.ReviewSellActivity"
+            android:label="@string/title_activity_review_sell" >
         </activity>
     </application>
 

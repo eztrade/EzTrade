@@ -6,3 +6,4 @@
 /Users/ayog/AndroidStudioProjects/EzTrade/app/build/intermediates/pre-dexed/debug/classes-d321327a68768bf7cb7e5728f780feb796fb1ae7.jar
 /Users/ayog/AndroidStudioProjects/EzTrade/app/build/intermediates/pre-dexed/debug/Parse-1.8.1-fc0cbc15fda1dfdecc63b13d08f16cd68ed1ee86.jar
 /Users/ayog/AndroidStudioProjects/EzTrade/app/build/intermediates/pre-dexed/debug/classes-eafe5709665a78c45b8410bcb97448136a78556a.jar
+/Users/ayog/AndroidStudioProjects/EzTrade/app/build/intermediates/pre-dexed/debug/guava-18.0-f5c423e814c87b2674c477d5cc6454476678adb1.jar
