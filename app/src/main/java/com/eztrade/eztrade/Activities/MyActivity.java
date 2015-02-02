@@ -23,7 +23,7 @@ public class MyActivity extends Activity {
         buyButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent buyIntent = new Intent(MyActivity.this, ParseTestActivity.class);
+                Intent buyIntent = new Intent(MyActivity.this, BuyActivity.class);
                 startActivity(buyIntent);
             }
         });

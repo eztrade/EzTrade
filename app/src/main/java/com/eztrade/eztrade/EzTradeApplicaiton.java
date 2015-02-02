@@ -2,16 +2,15 @@ package com.eztrade.eztrade;
 
 import android.app.Application;
 
-import com.eztrade.eztrade.dataModel.Sale;
+import com.eztrade.eztrade.dataModel.Post;
 import com.parse.Parse;
-import com.parse.ParseObject;
 
 /**
  * Created by ayog on 1/14/15.
  */
 public class EzTradeApplicaiton extends Application {
 
-    private Sale currentSale;
+    private Post currentPost;
     private static EzTradeApplicaiton instance = null;
 
     @Override
@@ -34,11 +33,11 @@ public class EzTradeApplicaiton extends Application {
         return instance;
     }
 
-    public Sale getCurrentSale() {
-        return currentSale;
+    public Post getCurrentPost() {
+        return currentPost;
     }
 
-    public void setCurrentSale(Sale currentSale) {
-        this.currentSale = currentSale;
+    public void setCurrentPost(Post currentPost) {
+        this.currentPost = currentPost;
     }
 }

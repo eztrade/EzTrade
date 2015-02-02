@@ -4,10 +4,15 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.eztrade.eztrade.EzTradeApplicaiton;
-import com.eztrade.eztrade.dataModel.Sale;
+import com.eztrade.eztrade.dataModel.Post;
+import com.parse.ParseFile;
+import com.parse.ParseObject;
 
 import eztrade.eztrade.com.eztrade.R;
 
@@ -17,17 +22,44 @@ public class ReviewSellActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_review_sell);
+        final ImageView productImageView = (ImageView)findViewById(R.id.productImageView);
         final TextView titleTV = (TextView) findViewById(R.id.titleTV);
         final TextView descriptionTV = (TextView) findViewById(R.id.descriptionTV);
         final TextView emailTV = (TextView) findViewById(R.id.emailTV);
         final TextView phoneTV = (TextView) findViewById(R.id.phoneTV);
+        final Button postButton = (Button) findViewById(R.id.postButton);
 
-        Sale currentSale = EzTradeApplicaiton.getApplication().getCurrentSale();
+        final Post currentPost = EzTradeApplicaiton.getApplication().getCurrentPost();
 
-        titleTV.setText(currentSale.title);
-        descriptionTV.setText(currentSale.description);
-        emailTV.setText(currentSale.email);
-        phoneTV.setText(currentSale.phone);
+        titleTV.setText(currentPost.title);
+        descriptionTV.setText(currentPost.description);
+        emailTV.setText(currentPost.email);
+        phoneTV.setText(currentPost.phone);
+        productImageView.setImageDrawable(currentPost.image);
+
+
+
+        postButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                sendCurrentPost(currentPost);
+            }
+        });
+    }
+
+    private void sendCurrentPost(Post post)
+    {
+        ParseObject parsePostObject = new ParseObject("Post");
+        parsePostObject.put("title",post.title);
+        parsePostObject.put("description",post.description);
+        parsePostObject.put("zip",post.zip);
+        parsePostObject.put("email",post.email);
+        parsePostObject.put("phone",post.phone);
+
+        ParseFile parseFile = new ParseFile("postImage",post.image.toString().getBytes());
+        parsePostObject.put("image",parseFile);
+
+        parsePostObject.saveInBackground();
     }
 
 

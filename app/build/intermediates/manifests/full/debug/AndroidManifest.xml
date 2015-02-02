@@ -44,6 +44,10 @@
             android:name="com.eztrade.eztrade.Activities.ReviewSellActivity"
             android:label="@string/title_activity_review_sell" >
         </activity>
+        <activity
+            android:name="com.eztrade.eztrade.Activities.BuyActivity"
+            android:label="@string/title_activity_buy" >
+        </activity>
     </application>
 
 </manifest>

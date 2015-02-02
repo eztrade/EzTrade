@@ -12,7 +12,6 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.util.Log;
-import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -25,7 +24,7 @@ import android.provider.MediaStore.Images.Media;
 
 
 import com.eztrade.eztrade.EzTradeApplicaiton;
-import com.eztrade.eztrade.dataModel.Sale;
+import com.eztrade.eztrade.dataModel.Post;
 
 import eztrade.eztrade.com.eztrade.R;
 
@@ -45,17 +44,17 @@ public class SellActivity extends Activity {
         setContentView(R.layout.activity_sell);
         Button reviewButton = (Button)findViewById(R.id.reviewButton);
         productImageView = (ImageView)findViewById(R.id.productImageView);
-        Button cameraButton = (Button) findViewById(R.id.cameraButton);
 
         final EditText titleET = (EditText) findViewById(R.id.titleET);
         final EditText descriptionET = (EditText) findViewById(R.id.descriptionET);
+        final EditText zipET = (EditText) findViewById(R.id.zipET);
         final EditText emailET = (EditText) findViewById(R.id.emailET);
         final EditText phoneET = (EditText) findViewById(R.id.phoneET);
 
         reviewButton.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
-                saveSale(titleET, descriptionET, emailET, phoneET);
+                saveSale(titleET, descriptionET, zipET,  emailET, phoneET);
                 startActivity(new Intent(SellActivity.this, ReviewSellActivity.class));
             }
         });
@@ -68,14 +67,15 @@ public class SellActivity extends Activity {
         });
     }
 
-    private void saveSale(EditText titleET, EditText descriptionET, EditText emailET, EditText phoneET) {
-        Sale currentSale = new Sale();
-        currentSale.title = titleET.getText().toString();
-        currentSale.description = descriptionET.getText().toString();
-        currentSale.email = emailET.getText().toString();
-        currentSale.phone = phoneET.getText().toString();
-
-        EzTradeApplicaiton.getApplication().setCurrentSale(currentSale);
+    private void saveSale(EditText titleET, EditText descriptionET, EditText zipET, EditText emailET, EditText phoneET) {
+        Post currentPost = new Post();
+        currentPost.title = titleET.getText().toString();
+        currentPost.email = emailET.getText().toString();
+        currentPost.description = descriptionET.getText().toString();
+        currentPost.zip = zipET.getText().toString();
+        currentPost.phone = phoneET.getText().toString();
+        currentPost.image = productImageView.getDrawable();
+        EzTradeApplicaiton.getApplication().setCurrentPost(currentPost);
     }
 
     private void startDialog() {

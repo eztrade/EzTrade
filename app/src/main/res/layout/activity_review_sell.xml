@@ -12,7 +12,8 @@
         android:id="@+id/productImageView"
         android:layout_width="@android:dimen/thumbnail_width"
         android:layout_height="@android:dimen/thumbnail_height"
-        android:src="@android:drawable/ic_input_add"/>
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_action_new_picture"/>
 
 
     <TextView
@@ -32,9 +33,16 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:id="@+id/zipTV"
+        android:hint="Zip Code"
+        android:layout_below="@+id/descriptionTV"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:hint="Email"
         android:id="@+id/emailTV"
-        android:layout_below="@+id/descriptionTV"
+        android:layout_below="@+id/zipTV"
         android:inputType="textEmailAddress" />
 
     <TextView
@@ -46,7 +54,7 @@
         android:layout_below="@+id/emailTV"/>
 
     <Button
-        android:id="@+id/submitButton"
+        android:id="@+id/postButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Post"
