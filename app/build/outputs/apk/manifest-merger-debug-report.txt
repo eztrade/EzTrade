@@ -1,6 +1,8 @@
 -- Merging decision tree log ---
 manifest
 ADDED from AndroidManifest.xml:2:1
+	xmlns:android
+		ADDED from AndroidManifest.xml:2:11
 	package
 		ADDED from AndroidManifest.xml:3:5
 		INJECTED from AndroidManifest.xml:0:0
@@ -8,8 +10,6 @@ ADDED from AndroidManifest.xml:2:1
 	android:versionName
 		INJECTED from AndroidManifest.xml:0:0
 		INJECTED from AndroidManifest.xml:0:0
-	xmlns:android
-		ADDED from AndroidManifest.xml:2:11
 	android:versionCode
 		INJECTED from AndroidManifest.xml:0:0
 		INJECTED from AndroidManifest.xml:0:0
@@ -59,34 +59,34 @@ activity#com.parse.ui.ParseLoginActivity
 ADDED from AndroidManifest.xml:20:9
 	android:label
 		ADDED from AndroidManifest.xml:22:13
-	android:launchMode
-		ADDED from AndroidManifest.xml:23:13
 	android:name
 		ADDED from AndroidManifest.xml:21:13
+	android:launchMode
+		ADDED from AndroidManifest.xml:23:13
 meta-data#com.parse.ui.ParseLoginActivity.PARSE_LOGIN_ENABLED
 ADDED from AndroidManifest.xml:24:13
-	android:value
-		ADDED from AndroidManifest.xml:26:17
 	android:name
 		ADDED from AndroidManifest.xml:25:17
+	android:value
+		ADDED from AndroidManifest.xml:26:17
 meta-data#com.parse.ui.ParseLoginActivity.PARSE_LOGIN_EMAIL_AS_USERNAME
 ADDED from AndroidManifest.xml:27:13
-	android:value
-		ADDED from AndroidManifest.xml:29:17
 	android:name
 		ADDED from AndroidManifest.xml:28:17
+	android:value
+		ADDED from AndroidManifest.xml:29:17
 meta-data#com.parse.ui.ParseLoginActivity.FACEBOOK_LOGIN_ENABLED
 ADDED from AndroidManifest.xml:30:13
-	android:value
-		ADDED from AndroidManifest.xml:32:17
 	android:name
 		ADDED from AndroidManifest.xml:31:17
+	android:value
+		ADDED from AndroidManifest.xml:32:17
 meta-data#com.parse.ui.ParseLoginActivity.TWITTER_LOGIN_ENABLED
 ADDED from AndroidManifest.xml:33:13
-	android:value
-		ADDED from AndroidManifest.xml:35:17
 	android:name
 		ADDED from AndroidManifest.xml:34:17
+	android:value
+		ADDED from AndroidManifest.xml:35:17
 activity#com.eztrade.eztrade.Activities.MyActivity
 ADDED from AndroidManifest.xml:37:9
 	android:label
