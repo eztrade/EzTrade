@@ -1,9 +1,11 @@
 /Users/ayog/AndroidStudioProjects/EzTrade/app/build/intermediates/classes/debug
 /Users/ayog/AndroidStudioProjects/EzTrade/app/build/intermediates/pre-dexed/debug/support-annotations-21.0.3-7e8f4032d78bf438eaadc79b9a554ae2c7cc5818.jar
+/Users/ayog/AndroidStudioProjects/EzTrade/app/build/intermediates/pre-dexed/debug/classes-0b954e4a8808ee8afc81dae621ae6a15943dc7c9.jar
 /Users/ayog/AndroidStudioProjects/EzTrade/app/build/intermediates/pre-dexed/debug/bolts-android-1.1.4-f5d85989e9287bf5ff7f9be3f257e228fa987acf.jar
 /Users/ayog/AndroidStudioProjects/EzTrade/app/build/intermediates/pre-dexed/debug/ParseCrashReporting-1.8.1-008831a13280255d1193e31451d16775524e7d48.jar
 /Users/ayog/AndroidStudioProjects/EzTrade/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.3-c34cb6fd9fb43b0658089eac9d4af020d9f14cc5.jar
 /Users/ayog/AndroidStudioProjects/EzTrade/app/build/intermediates/pre-dexed/debug/classes-d321327a68768bf7cb7e5728f780feb796fb1ae7.jar
-/Users/ayog/AndroidStudioProjects/EzTrade/app/build/intermediates/pre-dexed/debug/Parse-1.8.1-fc0cbc15fda1dfdecc63b13d08f16cd68ed1ee86.jar
+/Users/ayog/AndroidStudioProjects/EzTrade/app/build/intermediates/pre-dexed/debug/classes-a6daf7991aa228539168a1ede251693952c89e39.jar
+/Users/ayog/AndroidStudioProjects/EzTrade/app/build/intermediates/pre-dexed/debug/Parse-1.8.1-150654da7109f0192fc76fb72ce3b15711776a7e.jar
 /Users/ayog/AndroidStudioProjects/EzTrade/app/build/intermediates/pre-dexed/debug/classes-eafe5709665a78c45b8410bcb97448136a78556a.jar
 /Users/ayog/AndroidStudioProjects/EzTrade/app/build/intermediates/pre-dexed/debug/guava-18.0-f5c423e814c87b2674c477d5cc6454476678adb1.jar

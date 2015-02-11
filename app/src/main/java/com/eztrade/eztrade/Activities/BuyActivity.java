@@ -1,7 +1,7 @@
 package com.eztrade.eztrade.Activities;
 
+import android.app.Activity;
 import android.content.Context;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -15,7 +15,7 @@ import android.widget.Toast;
 
 import eztrade.eztrade.com.eztrade.R;
 
-public class BuyActivity extends ActionBarActivity {
+public class BuyActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

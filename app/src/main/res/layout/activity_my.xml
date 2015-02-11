@@ -25,4 +25,11 @@
         android:layout_alignLeft="@+id/buyButton"
         android:layout_alignStart="@+id/buyButton" />
 
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/com_parse_ui_large_vertical_spacing"
+        android:text="Log In"/>
 </RelativeLayout>

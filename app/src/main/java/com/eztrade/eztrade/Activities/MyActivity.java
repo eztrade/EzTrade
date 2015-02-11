@@ -8,10 +8,13 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
+import com.parse.ui.ParseLoginBuilder;
+
 import eztrade.eztrade.com.eztrade.R;
 
 
 public class MyActivity extends Activity {
+    private static final int LOGIN_REQUEST = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,11 +22,21 @@ public class MyActivity extends Activity {
         setContentView(R.layout.activity_my);
         Button buyButton = (Button)findViewById(R.id.buyButton);
         Button sellButton = (Button)findViewById(R.id.sellButton);
+        Button login_button = (Button)findViewById(R.id.login_button);
+
+        login_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ParseLoginBuilder loginBuilder = new ParseLoginBuilder(
+                        MyActivity.this);
+                startActivityForResult(loginBuilder.build(), LOGIN_REQUEST);
+            }
+        });
 
         buyButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent buyIntent = new Intent(MyActivity.this, BuyActivity.class);
+                Intent buyIntent = new Intent(MyActivity.this, BuyQueryActivity.class);
                 startActivity(buyIntent);
             }
         });
